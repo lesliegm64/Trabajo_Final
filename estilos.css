@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+   
+}
+header{
+    display: flex;
+    background-color: rgb(112, 206, 231);
+    justify-content: space-between;/*Para que los elementos se distribuyan según el eje principal*/
+    min-height: 120px;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    height: 100px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.nombre-empresa{
+    font-size:50px;
+    Color: rgb(199, 44, 93);
+}
+.lks{
+    display: flex;
+    list-style: none;
+
+}
+.menu{
+    text-decoration: none;/*Par que no tengan subrayado*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size:larger;
+    font-weight:bold;
+    margin-right: 25px;
+    Color: rgb(199, 44, 93);
+}
+.menu:hover{
+    color: white;
+}
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+.conteItemsCarrusel{
+    height: 400px;
+    overflow: hidden;/*Para que todos los elementos ocupen el mismo espacio*/
+}
+.itemCarrusel{
+    height: 100%;
+    position: relative;
+}
+.tarjetaCarrusel{
+    height: 100%;
+}
+.flechasCarrusel{
+ position: absolute;
+ top:0;
+ height: 100%;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 20px;
+}
+#tarjetaCarrusel-1{
+    background-color: blueviolet;
+}
+#tarjetaCarrusel-2{
+    background-color: rgb(98, 215, 180);
+}
+#tarjetaCarrusel-3{
+    background-color: rgb(138, 215, 31);
+}
+#flecha{
+    text-decoration: none;
+}
+i{
+    color:white; 
+}
+.banner{
+    height: 400px;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    background-color:rgb(112, 206, 231);
+    justify-content: space-between;/*Para que los elementos se distribuyan según el eje principal*/
+    min-height: 120px;
+    align-items: center;
+}
+.nosotros{
+    margin-left: 30px;
+}
+.nost{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a.nost:hover{
+    color: white;
+}
+
+.redes{
+    display: flex;
+    list-style: none;
+    align-content: center;
+    margin-right: 20px;
+}
+.redes img{
+    height: 35px;
+    margin-right: 20px;
+}
+h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(199, 44, 93);
+}
+.final{
+    display: block;
+    height: 50px;
+    background-color:  rgb(112, 206, 231);
+    text-align: center;
+    margin-bottom: 0px;
+}
